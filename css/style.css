@@ -396,8 +396,10 @@ main {
 }
 .plans-container--slider {
   display: flex;
-  /* gap: 50px; Aun no está soportado por todos los navegadores :( */
-  height: 316px;
+  gap: 50px;
+  width: 90%;
+  height: 320px;
+  margin: 0 auto;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
@@ -409,7 +411,7 @@ main {
   min-width: 230px;
   max-width: 300px;
   height: 250px;
-  margin: 50px 30px 0;
+  margin: 50px auto 0;
   padding: 0 15px;
   background-color: var(--just-white);
   border-radius: 15px;
@@ -487,4 +489,12 @@ footer section {
 .left a {
   text-decoration: none;
   color: var(--just-white);
+}
+.right {
+  display: flex;
+  flex-direction: column;
+}
+.right p {
+  margin-top: 5px;
+  color: var(--soft-orange);
 }
